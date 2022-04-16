@@ -99,6 +99,17 @@ p {
 }
 
 /*botonetes*/
+.btn-primary {
+    color: #fff;
+    background-color: rgb(44, 222, 111);
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: rgb(26, 196, 97);
+    border-color: #0062cc;
+}
 
 .container-boton{
     background-color: #2e6329;

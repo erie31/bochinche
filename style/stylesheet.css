@@ -55,6 +55,11 @@ p {
     text-align: center;
     margin-inline: 25%;
 }
+main div a {
+    color: rgb(26, 196, 97);
+    background-color: transparent;
+}
+
 .imagenIndex {
     margin-top: 5%;
     margin-bottom: 5%;

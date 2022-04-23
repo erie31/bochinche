@@ -138,6 +138,7 @@ main div a {
 }
 
 nav ul li {
+    list-style: none;
     --c: rgb(26, 196, 97);
     color: var(--c);
     font-size: 16px;
@@ -156,6 +157,7 @@ nav ul li {
     z-index: 1;
     transition: 0.5s;
     margin: 1em;
+    
 }
 
 nav ul li span {

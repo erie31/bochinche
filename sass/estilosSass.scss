@@ -1,0 +1,126 @@
+* {
+    Margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+
+    body {
+        background-color: lightgrey;
+    }
+
+}
+
+@import "map.scss";
+@import "header.scss";
+@import "menu.scss";
+@import "media.scss";
+
+.layout {
+    display: grid;
+}
+
+p {
+    text-align: center;
+    margin-inline: 25%;
+}
+
+.center {
+    text-align: center;
+    display: inline-block;
+}
+
+#centro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main div a {
+    color: rgb(26, 196, 97);
+    background-color: transparent;
+}
+
+.imagenIndex {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+/*grid*/
+.tablaPromociones {
+    border: none;
+    padding: 1rem;
+    margin-top: 10%;
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 200px 200px 00p;
+    grid-gap: 1rem;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    font-size: 3rem;
+}
+
+.promoA {
+    grid-column: 1;
+}
+
+.promoB {
+    grid-column: 2;
+}
+
+.promoC {
+    grid-column: 3;
+}
+
+.total {
+    grid-column: 4;
+}
+
+.contenidoPromoA {
+    grid-row: 2 / 2;
+}
+
+.contenidoPromoB {
+    grid-row: 2 / 3;
+}
+
+.contenidoPromoC {
+    grid-row: 2 / 4;
+}
+
+.contenidoTotal {
+    grid-row: 3 / 3;
+}
+
+.gridReserva {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    justify-content: center;
+    margin: 15px;
+    grid-gap: 15px;
+}
+
+.top1 {
+    grid-row: 1;
+}
+
+.top {
+    grid-row: 2;
+}
+
+.bottom {
+    grid-row: 3;
+}
+
+.grid-gallery {
+    display: grid;
+    margin-top: 5%;
+    place-content: center;
+    grid-template-rows: 200px 200px;
+    grid-template-columns: 3;
+    gap: 3.5rem;
+    grid-auto-flow: row dense;
+    justify-self: center;
+    align-self: center;
+}

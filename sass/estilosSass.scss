@@ -7,17 +7,19 @@
     text-align: center;
 
     body {
-        background-color: lightgrey;
+        background-color: rgb(153, 184, 160)!important;
     }
 
 }
-
+$verde: rgb(26, 196, 97);
+@import "media.scss";
 @import "map.scss";
 @import "header.scss";
 @import "menu.scss";
-@import "media.scss";
+@import "efectoBoton";
 
 .layout {
+    background-color: $verde;
     display: grid;
 }
 
@@ -26,19 +28,10 @@ p {
     margin-inline: 25%;
 }
 
-.center {
-    text-align: center;
-    display: inline-block;
-}
 
-#centro {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 main div a {
-    color: rgb(26, 196, 97);
+    $verde: rgb(26, 196, 97);
     background-color: transparent;
 }
 
@@ -123,4 +116,22 @@ main div a {
     grid-auto-flow: row dense;
     justify-self: center;
     align-self: center;
+}
+/* whats */
+.boton{
+    width: 25px;
+    transition: ease 1s;
+}
+.container-boton{
+    background-color: #2e6329;
+    position: fixed;
+    z-index: 999;
+    border-radius: 50%;
+    bottom: 20px;
+    right: 25px;
+    padding: 10px;
+    transition: ease 0.3s;
+}
+.container-boton :hover {
+transform: scale(2);
 }

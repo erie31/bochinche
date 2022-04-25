@@ -1,0 +1,15 @@
+.map {
+    margin-right:auto;
+    margin-left:auto;
+    position: relative;
+    left: auto;
+    right: auto;
+    height: 500px;
+    width: 600px;
+}
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 500px;
+    width: 600px;
+}

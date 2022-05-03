@@ -1,0 +1,15 @@
+$coloresPaginas: (
+    verde: #33CC33,
+    blanco: #f9f5f4,
+    verdeclaro: #b2beb5
+);
+
+@each $colorPagina, $color in $coloresPaginas {
+   .c-#{$colorPagina} {
+       color: $color;
+   }
+   .bgc-#{$colorPagina} {
+       background-color: $color;
+   }
+
+}

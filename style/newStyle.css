@@ -5,89 +5,11 @@
   justify-content: center;
   justify-items: center;
   text-align: center; }
-  * body {
-    background-color: #99b8a0 !important; }
 
 @media only screen and (max-width: 600px) {
   nav {
-    display: none !important; } }
-
-@media only screen and (min-width: 600px) {
-  .menu__btn {
-    display: none; }
-  .menu__box {
-    z-index: 3; }
-  #menuToggle {
-    display: block;
-    position: relative;
-    top: 15px;
-    left: -150px;
-    z-index: 1;
-    -webkit-user-select: none;
-    user-select: none; }
-  #menuToggle a {
-    text-decoration: none;
-    color: #232323;
-    transition: color 0.3s ease; }
-  #menuToggle a:hover {
-    color: tomato; }
-  #menuToggle input {
-    display: block;
-    width: 40px;
-    height: 32px;
-    position: absolute;
-    top: -7px;
-    left: -5px;
-    cursor: pointer;
-    opacity: 0;
-    z-index: 2;
-    -webkit-touch-callout: none; }
-  #menuToggle span {
-    display: block;
-    width: 33px;
-    height: 4px;
-    margin-bottom: 5px;
-    position: relative;
-    background: #014e05;
-    border-radius: 3px;
-    z-index: 1;
-    transform-origin: 4px 0px;
-    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease; }
-  #menuToggle span:first-child {
-    transform-origin: 0% 0%; }
-  #menuToggle span:nth-last-child(2) {
-    transform-origin: 0% 100%; }
-  #menuToggle input:checked ~ span {
-    opacity: 1;
-    transform: rotate(45deg) translate(-2px, -1px);
-    background: #232323; }
-  #menuToggle input:checked ~ span:nth-last-child(3) {
-    opacity: 0;
-    transform: rotate(0deg) scale(0.2, 0.2); }
-  #menuToggle input:checked ~ span:nth-last-child(2) {
-    transform: rotate(-45deg) translate(0, -1px); }
-  div #menuToggle {
-    position: relative;
-    top: 50px;
-    left: 50px;
-    z-index: 1;
-    -webkit-user-select: none;
-    user-select: none; }
-    div #menuToggle span {
-      display: none; }
-    div #menuToggle a {
-      text-decoration: none;
-      color: #232323;
-      transition: color 0.3s ease; }
-  div nav ul li a {
-    display: none;
-    border: none; }
-  div header {
-    width: fit-content;
-    border: none;
-    text-align: center;
-    display: inline-block; }
-  div h1 {
+    display: none !important; }
+  header .bochinche {
     margin-left: auto;
     margin-right: auto;
     background-image: url(https://img.freepik.com/vector-gratis/fondo-cielo-pastel-acuarela-pintado-mano_52683-59501.jpg?size=626&ext=jpg);
@@ -95,17 +17,39 @@
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Palette Mosaic', cursive;
-    font-size: 3.2rem;
-    border-top: outset 10px #1ac461;
-    border-right: outset 15px #1ac461;
-    border-bottom: outset 15px #1ac461;
-    border-left: outset 20px #1ac461; }
-  div body {
+    font-size: 3rem !important; }
+  header footer {
     margin-left: auto;
     margin-right: auto;
-    background-image: url(https://i.pinimg.com/736x/db/8b/d4/db8bd4c068ae9ea4a23ee311ff112de4.jpg);
-    color: #232323; }
-  div .map {
+    bottom: 0; }
+  .medidasMapa, .map, .gmap_canvas {
+    height: 500px;
+    width: 450px !important; }
+  .map {
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    left: auto;
+    right: auto; }
+  .gmap_canvas {
+    overflow: hidden;
+    background: none !important; }
+  .tablaPromociones {
+    display: block !important; } }
+
+@media only screen and (min-width: 600px) {
+  .menu__btn {
+    display: none; }
+  .menu__box {
+    z-index: 3; }
+  header {
+    width: fit-content;
+    text-align: center;
+    display: inline-block; }
+  body {
+    margin-left: auto;
+    margin-right: auto; }
+  .map {
     margin-right: auto;
     margin-left: auto;
     position: relative;
@@ -114,30 +58,12 @@
     right: auto;
     height: 500px;
     width: 600px; }
-  div #menuB {
-    position: absolute;
-    width: 530px;
-    margin: -100px 0 0 -220px;
-    padding: 3px;
-    padding-top: 3px;
-    background: #ededed;
-    list-style-type: none;
-    transform-origin: 0% 0%;
-    transform: translate(-150%, 0);
-    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1); }
-  div #menuB li {
-    margin-left: 250px;
-    padding: 5px;
-    font-size: 20px; }
-  div #menuToggle input:checked ~ ul {
-    transform: none; }
-  div .tablaPromociones {
-    margin-right: auto;
+  .tablaPromociones {
     padding-left: 0%;
     border: none;
     grid-template-columns: repeat(3, 1fr);
     font-size: 2rem; }
-  div footer {
+  footer {
     margin-left: auto;
     margin-right: auto;
     position: absolute;
@@ -184,21 +110,17 @@ header {
   margin-left: auto;
   margin-right: auto; }
   header .bochinche {
-    color: #1ac461; }
+    background-image: url(https://img.freepik.com/vector-gratis/fondo-cielo-pastel-acuarela-pintado-mano_52683-59501.jpg?size=626&ext=jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Palette Mosaic', cursive;
+    font-size: 5rem;
+    border: solid;
+    border-radius: 10px; }
 
-h1 {
-  margin-left: auto;
-  margin-right: auto;
-  background-image: url(https://img.freepik.com/vector-gratis/fondo-cielo-pastel-acuarela-pintado-mano_52683-59501.jpg?size=626&ext=jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.linkIndex {
   font-family: 'Palette Mosaic', cursive;
-  font-size: 5rem;
-  border-top: outset 10px #1ac461;
-  border-right: outset 15px #1ac461;
-  border-bottom: outset 15px #1ac461;
-  border-left: outset 20px #1ac461; }
+  text-decoration: none !important; }
 
 nav .menu {
   display: flex; }
@@ -294,6 +216,9 @@ div .menu__box {
   background-color: #ECEFF1;
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
   transition-duration: .25s; }
+  div .menu__box a {
+    color: #33CC33;
+    font-size: 2rem; }
 
 div .menu__item {
   display: block;
@@ -308,20 +233,19 @@ div .menu__item {
 div .menu__item:hover {
   background-color: #CFD8DC; }
 
+/* BotonesMenu*/
+nav ul li a {
+  color: white; }
+
 nav ul li span {
   position: absolute;
-  width: 25%;
+  width: 100%;
   height: 100%;
   background-color: var(--c);
   transform: translateY(150%);
-  border-radius: 50%;
-  left: calc((var(--n) - 1) * 25%);
   transition: 0.5s;
   transition-delay: calc((var(--n) - 1) * 0.05s);
   z-index: -1; }
-
-nav ul li:hover {
-  color: black; }
 
 nav ul li:hover span {
   transform: translateY(0) scale(2); }
@@ -329,36 +253,36 @@ nav ul li:hover span {
 nav ul li span:nth-child(1) {
   --n: 1; }
 
-nav ul li span:nth-child(2) {
-  --n: 2; }
+/*BtnConocenos*/
+.btn-primary {
+  background-color: #33CC33 !important;
+  color: #f9f5f4;
+  border-color: #33CC33 !important; }
 
-nav ul li span:nth-child(3) {
-  --n: 3; }
+/* whats */
+.boton {
+  width: 25px;
+  transition: ease 1s; }
 
-nav ul li span:nth-child(4) {
-  --n: 4; }
+.container-boton {
+  background-color: #2e6329;
+  position: fixed;
+  z-index: 999;
+  border-radius: 50%;
+  bottom: 20px;
+  right: 25px;
+  padding: 10px;
+  transition: ease 0.3s; }
 
-.layout {
-  background-color: #1ac461;
-  display: grid; }
-
-p {
-  text-align: center;
-  margin-inline: 25%; }
-
-main div a {
-  background-color: transparent; }
-
-.imagenIndex {
-  margin-top: 5%;
-  margin-bottom: 5%; }
+.container-boton :hover {
+  transform: scale(2); }
 
 /*grid*/
 .tablaPromociones {
-  border: none;
-  padding: 1rem;
-  margin-top: 10%;
   display: grid;
+  text-align: center;
+  border: none;
+  margin-top: 10%;
   grid-template-columns: 200px 200px 200px;
   grid-template-rows: 200px 200px 00p;
   grid-gap: 1rem;
@@ -417,20 +341,51 @@ main div a {
   justify-self: center;
   align-self: center; }
 
-/* whats */
-.boton {
-  width: 25px;
-  transition: ease 1s; }
+.c-verde {
+  color: #33CC33; }
 
-.container-boton {
-  background-color: #2e6329;
-  position: fixed;
-  z-index: 999;
-  border-radius: 50%;
-  bottom: 20px;
-  right: 25px;
-  padding: 10px;
-  transition: ease 0.3s; }
+.bgc-verde {
+  background-color: #33CC33; }
 
-.container-boton :hover {
-  transform: scale(2); }
+.c-blanco {
+  color: #f9f5f4; }
+
+.bgc-blanco {
+  background-color: #f9f5f4; }
+
+.c-verdeclaro {
+  color: #b2beb5; }
+
+.bgc-verdeclaro {
+  background-color: #b2beb5; }
+
+footer p {
+  color: #f9f5f4;
+  border: solid #33CC33;
+  border-radius: 10px; }
+
+.layout {
+  display: grid; }
+
+p {
+  background-color: #b2beb5 !important;
+  margin-top: 2rem !important;
+  border: solid #33CC33;
+  border-radius: 10px;
+  text-align: center;
+  margin-inline: 25%;
+  font-family: 'Roboto', sans-serif;
+  color: #d8d3d3; }
+
+div .card {
+  border: none !important;
+  background-color: #b2beb5 !important; }
+  div .card p {
+    border: none; }
+
+main div a {
+  background-color: transparent; }
+
+.imagenIndex {
+  margin-top: 5%;
+  margin-bottom: 5%; }

@@ -1,7 +1,11 @@
-
-header {
+@mixin centrado {
     margin-left: auto;
     margin-right: auto;
+    
+}
+
+header {
+    @include centrado;
 
     .bochinche {
         background-image: url(https://img.freepik.com/vector-gratis/fondo-cielo-pastel-acuarela-pintado-mano_52683-59501.jpg?size=626&ext=jpg);

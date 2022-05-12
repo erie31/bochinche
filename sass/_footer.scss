@@ -1,10 +1,13 @@
 footer {
+
     p {
-        color: map-get($map: $coloresPaginas, $key:blanco );
-        border: solid map-get($map: $coloresPaginas , $key:verde );
+        color: map-get($map: $coloresPaginas, $key: blanco);
+        border: solid map-get($map: $coloresPaginas , $key: verde);
         border-radius: 10px;
-        
+        margin-top: 0% !important;
+        margin-bottom: 0% !important;
+        padding-bottom: 0% !important;
+
     }
 
-   
 }

@@ -4,14 +4,14 @@
     font-family: 'Roboto', sans-serif;
     justify-content: center;
     justify-items: center;
-    text-align: center;
-
+   
     
 
 }
 
 
 @import "media.scss";
+@import "carousel.scss";
 @import "map.scss";
 @import "header.scss";
 @import "menu.scss";
@@ -23,30 +23,35 @@
 
 
 .layout {
-    
+    background-image: url(https://images5.alphacoders.com/428/428016.jpg);
+    background-repeat: no-repeat;
     display: grid;
+    grid-column: auto;
+}
+nav {
+    margin-bottom: -25px !important;
+    
 }
 
 
-p {
-    background-color: rgb(178, 190, 181) !important;
-    margin-top: 2rem !important;
-    border: solid map-get($coloresPaginas, verde);
-    border-radius: 10px;
-    text-align: center;
-    margin-inline: 25%;
-    font-family: 'Roboto', sans-serif;
-    color:rgb(216, 211, 211);
-}
 
 div {
     .card{
         p{ border: none;}
     border: none !important;
-    background-color: rgb(178, 190, 181) !important;
+    background-color: transparent !important;
     }
 }
-
+.txtIndex {
+    position: relative;
+    text-align: center;
+    
+    width: 80%;
+    
+}
+form {
+    text-align: center;
+}
 main div a {
     $verde: rgb(26, 196, 97);
     background-color: transparent;

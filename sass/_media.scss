@@ -1,62 +1,101 @@
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1100px) {
+    
     nav {
         display: none !important;
     }
+    p {
+        background-color: green !important;
+        margin-top: 0% !important;
+        border: solid green;
+        border-radius: 10px;
+        font-family: 'Roboto', sans-serif;
+        color:rgb(216, 211, 211);
+    }
 
-    
+body  {
+    text-align: center !important;
+}
+div {
+    p {display: inline-block;
+
+    }
+}
+
+
+
+
     header {
-        .bochinche{
-        margin-left: auto;
-        margin-right: auto;
-        background-image: url(https://img.freepik.com/vector-gratis/fondo-cielo-pastel-acuarela-pintado-mano_52683-59501.jpg?size=626&ext=jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        font-family: 'Palette Mosaic', cursive;
-        font-size: 3rem !important;
-        }
-
-        footer {
-            
+        .bochinche {
             margin-left: auto;
             margin-right: auto;
-            bottom: 0;
+            background-image: url(https://img.freepik.com/vector-gratis/fondo-cielo-pastel-acuarela-pintado-mano_52683-59501.jpg?size=626&ext=jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: 'Palette Mosaic', cursive;
+            border-radius: 10px;
+            border: solid 2px;
+            border-color: green;
+            font-size: 3rem !important; }     
+
+    }
+    
+
+    .medidasMapa {
+        height: 400px;
+        width: 350px !important;
+    }
+
+    .map {
+        @extend .medidasMapa;
+        margin-right: auto;
+        margin-left: auto;
+        position: relative;
+        left: auto;
+        right: auto;
+
+    }
+
+    .gmap_canvas {
+        @extend .medidasMapa;
+        overflow: hidden;
+        background: none !important;
+
+    }
+
+    .tablaPromociones {
+        display: block !important;
+    }
+    footer {
+        position: relative !important;
+        margin-left: auto;
+        margin-top: 50px;
+        margin-right: auto;
+                   
             
-        }
+            
         
- 
-    
-}
-.medidasMapa {
-    height: 500px;
-    width: 450px !important;
-}
-.map {
-    @extend .medidasMapa;
-    margin-right:auto;
-    margin-left:auto;
-    position: relative;
-    left: auto;
-    right: auto;
-    
-}
-.gmap_canvas {
-    @extend .medidasMapa;
-    overflow: hidden;
-    background: none !important;
-    
-}
-.tablaPromociones {
-    display: block !important;
-}
 
+    }
+    .pic-ctn {
+        position: relative;
+        height: 300px;
+        margin-bottom: 50px;
+        margin-right: 355px;
+}
 
 }
 
 
 
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 1100px) {
+    .pic-ctn {
+        position: relative;
+        width: 100vw;
+        height: 300px;
+        margin-bottom: 50px;
+      }
     .menu__btn {
         display: none;
     }
@@ -65,36 +104,26 @@
         z-index: 3;
     }
 
-
-
-
     header {
+        margin-top: 25px !important;
         width: fit-content;
         text-align: center;
         display: inline-block;
+    }
+    nav {
+        margin-top: 2%;
     }
 
 
 
     body {
+        
         margin-left: auto;
         margin-right: auto;
 
     }
 
-    .map {
-        margin-right: auto;
-        margin-left: auto;
-        position: relative;
-        top: 15%;
-        left: auto;
-        right: auto;
-        height: 500px;
-        width: 600px;
-    }
-
-
-
+    
 
     .tablaPromociones {
         padding-left: 0%;
@@ -104,11 +133,24 @@
     }
 
     footer {
-        margin-left: auto;
-        margin-right: auto;
-        position: absolute;
-        bottom: 0;
+        margin-top: 140px;
+        position: relative;
         width: 100%;
+        text-align: center;
+    
+    
+    }
+    p {
+        background-color: green !important;
+        margin-top: 0% !important;
+        border: solid green;
+        border-radius: 10px;
+        margin-inline: 25%;
+        font-family: 'Roboto', sans-serif;
+        color:rgb(216, 211, 211);
+    }
+    fieldset {
+        margin-top: 150px !important;
     }
 
 }
@@ -120,11 +162,7 @@
     }
 }
 
-@media all and (min-width: 1024px) {
-    .grid-gallery {
-        grid-template-columns: repeat(6, 1fr);
-    }
-}
+
 
 .grid-gallery__image {
     align-items: center;
@@ -135,13 +173,3 @@
 
 
 
-footer {
-
-    margin-top: 15%;
-    position: relative;
-    margin-bottom: 0%;
-    width: 100%;
-    text-align: center;
-
-
-}

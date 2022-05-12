@@ -45,8 +45,8 @@
       <li><a href="../pages/contacto.html">Contacto</a></li>
     </ul>
   </div>
-    <main class="center">
-        <fieldset>
+    <main>
+        <fieldset class="card bg-success">
             <form class="needs-validation" novalidate>
                 <div class="form-row">
                   <div class="col-md-6 mb-3">
@@ -66,9 +66,9 @@
                       Elegí una ciudad valida.
                     </div>
                   </div>
-                  <div class="col-md-3 mb-3">
+                  <div class="col-md-6 mb-3">
                     <label for="validationCustom05">Teléfono</label>
-                    <input type="tel" pattern="[0-9]" class= id="validationCustom05" required>
+                    <input type="tel" pattern="[0-9]" class="form-control" id="validationCustom05" required>
                     <div class="invalid-feedback">
                       Revisa tu teléfono.
                     </div>
@@ -82,17 +82,15 @@
                     </div>
                   </div>
                 </div>
-                <button class="btn btn-primary" type="submit">Reservar!</button>
+                <button class="btn btn-primary mx-auto" type="submit">Reservar!</button>
               </form>
               
               <script>
-              // Example starter JavaScript for disabling form submissions if there are invalid fields
               (function() {
                 'use strict';
                 window.addEventListener('load', function() {
-                  // Fetch all the forms we want to apply custom Bootstrap validation styles to
                   var forms = document.getElementsByClassName('needs-validation');
-                  // Loop over them and prevent submission
+
                   var validation = Array.prototype.filter.call(forms, function(form) {
                     form.addEventListener('submit', function(event) {
                       if (form.checkValidity() === false) {
@@ -106,12 +104,16 @@
               })();
               </script>
         </fieldset>
-    </main>
-    <footer>
-        <p>¡No dudes en escribirnos!</p>
-        <a href="mailto:bochinche@mail.com">bochinche@mail.com</a>
-        <a href="https://api.whatsapp.com/send?phone=543402657252">Envíanos un mensaje de WhatsApp</a>
-    </footer>
+
+        <div class="container-boton">
+          <a href="https://api.whatsapp.com/send?phone=543402657252" target="_blank">
+              <img class="boton" src="../Images/wh.png" alt="iconoWhat">
+          </a>
+        </div>
+
+  <footer>
+      <p>¡No dudes en escribirnos!</p>
+  </footer>
 </body>
 
 </html>

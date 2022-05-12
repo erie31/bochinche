@@ -8,18 +8,21 @@ header {
     @include centrado;
 
     .bochinche {
-        background-image: url(https://img.freepik.com/vector-gratis/fondo-cielo-pastel-acuarela-pintado-mano_52683-59501.jpg?size=626&ext=jpg);
-        
-        background-repeat: no-repeat;
-        background-size: cover;
+        background-color: transparent;
         font-family: 'Palette Mosaic', cursive;
         font-size: 5rem;
-        border: solid;
-        border-radius: 10px;
+        
         
     }
 }
 .linkIndex {
     font-family: 'Palette Mosaic', cursive;
     text-decoration: none !important;
+    
+}
+
+h1 a:hover {
+    color: black !important;
+    
+
 }

@@ -1,5 +1,5 @@
 $coloresPaginas: (
-    verde: #33CC33,
+    verde: #086308,
     blanco: #f9f5f4,
     verdeclaro: #b2beb5
 );
@@ -9,7 +9,7 @@ $coloresPaginas: (
        color: $color;
    }
    .bgc-#{$colorPagina} {
-       background-color: $color;
+    background: linear-gradient(to top, green, lightblue);
    }
 
 }

@@ -1,75 +1,36 @@
 
-/*grid*/
+
 .tablaPromociones {
-  
-  display: grid;
-  text-align: center;
-  border: none;
-  margin-top: 10%;
-  grid-template-columns: 200px 200px 200px;
-  grid-template-rows: 200px 200px 00p;
-  grid-gap: 1rem;
-  grid-row-gap: 10px;
-  grid-column-gap: 10px;
-  font-size: 3rem;
-  
-}
-
-.promoA {
-  grid-column: 1;
-}
-
-.promoB {
-  grid-column: 2;
-}
-
-.promoC {
-  grid-column: 3;
-}
-
-.total {
-  grid-column: 4;
-}
-
-.contenidoPromoA {
-  grid-row: 2 / 2;
-}
-
-.contenidoPromoB {
-  grid-row: 2 / 3;
-}
-
-.contenidoPromoC {
-  grid-row: 2 / 4;
-}
-
-.contenidoTotal {
-  grid-row: 3 / 3;
-}
-
-.gridReserva {
-  display: grid;
-  grid-template-rows: repeat(3, 1fr);
-  justify-content: center;
-  margin: 15px;
-  grid-gap: 15px;
-}
-
-.top1 {
-  grid-row: 1;
-}
-
-.top {
-  grid-row: 2;
-}
-
-.bottom {
-  grid-row: 3;
-}
+    position: relative;
+    display: flex;
+    flex-direction:row !important;
+    min-width: 300px;
+    background-color: green;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+    text-align: center;    
+    padding-top: 2%;
+    
+    h3 {
+      padding-bottom: 0% !important;
+    
+    }
+  }
+  .xl {
+    display: block;
+    text-align: center;
+         
+    p {
+      font-size: 2rem;
+      margin-bottom: 2.5% !important;
+    }
+    }
 
 .grid-gallery {
   display: grid;
   margin-top: 5%;
+  margin-bottom: 0%;
   place-content: center;
   grid-template-rows: 200px 200px;
   grid-template-columns: 3;
@@ -78,3 +39,4 @@
   justify-self: center;
   align-self: center;
 }
+

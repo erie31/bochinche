@@ -7,7 +7,7 @@ $coloresPaginas: (
 nav  {
     ul {
         li {
-            a{ color: white;}
+            a{ color: rgb(255, 255, 255);}
             span{
                 position: absolute;
     width: 100%;
@@ -40,6 +40,7 @@ nav ul li span:nth-child(1) {
     background-color: map-get($map: $coloresPaginas, $key:verde ) !important;
     color: map-get($map: $coloresPaginas, $key:blanco );
     border-color: map-get($map: $coloresPaginas, $key:verde) !important;
+    justify-self: center;
   }
 
 /* whats */
@@ -49,7 +50,7 @@ nav ul li span:nth-child(1) {
 }
 
 .container-boton {
-    background-color: #2e6329;
+    background-color: #15ff00;
     position: fixed;
     z-index: 999;
     border-radius: 50%;

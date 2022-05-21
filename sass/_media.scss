@@ -1,15 +1,21 @@
 @media only screen and (max-width: 1100px) {
+    .pic-ctn > img {
+        position: absolute;
+        height: 290px !important; 
+        width: 350px !important;
+        animation: display 10s infinite;
+      }
     
     nav {
         display: none !important;
     }
     p {
         background-color: green !important;
-        margin-top: 0% !important;
         border: solid green;
         border-radius: 10px;
         font-family: 'Roboto', sans-serif;
         color:rgb(216, 211, 211);
+        text-align: center;
     }
 
 body  {
@@ -69,14 +75,9 @@ div {
     footer {
         position: relative !important;
         margin-left: auto;
-        margin-top: 50px;
         margin-right: auto;
-                   
-            
-            
         
-
-    }
+}
     .pic-ctn {
         position: relative;
         height: 300px;
@@ -93,8 +94,7 @@ div {
     .pic-ctn {
         position: relative;
         width: 100vw;
-        height: 300px;
-        margin-bottom: 50px;
+        height: 480px;
       }
     .menu__btn {
         display: none;
@@ -123,7 +123,14 @@ div {
 
     }
 
-    
+    div {
+        .textIndex{
+            margin-bottom: 0%;
+            p {
+                margin-bottom: 0% !important;
+            }
+        }
+    }
 
     .tablaPromociones {
         padding-left: 0%;
@@ -132,26 +139,25 @@ div {
         font-size: 2rem;
     }
 
-    footer {
-        margin-top: 140px;
-        position: relative;
-        width: 100%;
-        text-align: center;
-    
-    
-    }
+
     p {
         background-color: green !important;
         margin-top: 0% !important;
+        margin-inline: 33%;
+        margin-bottom: 0% !important;
         border: solid green;
         border-radius: 10px;
-        margin-inline: 25%;
         font-family: 'Roboto', sans-serif;
         color:rgb(216, 211, 211);
+        text-align: center;
     }
     fieldset {
         margin-top: 150px !important;
     }
+.card {
+    p{margin-inline: 13%;
+    }
+}
 
 }
 

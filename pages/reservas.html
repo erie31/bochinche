@@ -46,28 +46,35 @@
     </ul>
   </div>
     <main>
+      <select class="form-control form-control-lg bg-success text-center text-white">
+                <option>Elige una opción</option>
+                <option>Bochinchito</option>
+                <option>Bochinche</option>
+                <option>Bochinche XL</option>
+              </select>
         <fieldset class="card bg-success">
             <form class="needs-validation" novalidate>
+              
                 <div class="form-row">
                   <div class="col-md-6 mb-3">
-                    <label for="validationCustom01">Nombre</label>
+                    <label class="text-white" for="validationCustom01">Nombre</label>
                     <input type="text" class="form-control" id="validationCustom01" required>                    
                   </div>
                   <div class="col-md-6 mb-3">
-                    <label for="validationCustom02">Apellido</label>
+                    <label class="text-white" for="validationCustom02">Apellido</label>
                     <input type="text" class="form-control" id="validationCustom02" required>              
                   </div>
                 </div>
                 <div class="form-row">
                   <div class="col-md-6 mb-3">
-                    <label for="validationCustom03">Ciudad</label>
+                    <label class="text-white" for="validationCustom03">Ciudad</label>
                     <input type="text" class="form-control" id="validationCustom03" required>
                     <div class="invalid-feedback">
                       Elegí una ciudad valida.
                     </div>
                   </div>
                   <div class="col-md-6 mb-3">
-                    <label for="validationCustom05">Teléfono</label>
+                    <label class="text-white" for="validationCustom05">Teléfono</label>
                     <input type="tel" pattern="[0-9]" class="form-control" id="validationCustom05" required>
                     <div class="invalid-feedback">
                       Revisa tu teléfono.
@@ -82,8 +89,9 @@
                     </div>
                   </div>
                 </div>
-                <button class="btn btn-primary mx-auto" type="submit">Reservar!</button>
+                
               </form>
+              
               
               <script>
               (function() {
@@ -104,6 +112,8 @@
               })();
               </script>
         </fieldset>
+
+        <div class="text-center reserva"><button class="btn btn-primary" type="submit">Reservar!</button></div>
 
         <div class="container-boton">
           <a href="https://api.whatsapp.com/send?phone=543402657252" target="_blank">

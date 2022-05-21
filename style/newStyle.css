@@ -2,19 +2,23 @@
   Margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
-  justify-content: center;
-  justify-items: center; }
+  justify-content: center; }
 
 @media only screen and (max-width: 1100px) {
+  .pic-ctn > img {
+    position: absolute;
+    height: 290px !important;
+    width: 350px !important;
+    animation: display 10s infinite; }
   nav {
     display: none !important; }
   p {
     background-color: green !important;
-    margin-top: 0% !important;
     border: solid green;
     border-radius: 10px;
     font-family: 'Roboto', sans-serif;
-    color: #d8d3d3; }
+    color: #d8d3d3;
+    text-align: center; }
   body {
     text-align: center !important; }
   div p {
@@ -48,7 +52,6 @@
   footer {
     position: relative !important;
     margin-left: auto;
-    margin-top: 50px;
     margin-right: auto; }
   .pic-ctn {
     position: relative;
@@ -60,8 +63,7 @@
   .pic-ctn {
     position: relative;
     width: 100vw;
-    height: 300px;
-    margin-bottom: 50px; }
+    height: 480px; }
   .menu__btn {
     display: none; }
   .menu__box {
@@ -76,26 +78,29 @@
   body {
     margin-left: auto;
     margin-right: auto; }
+  div .textIndex {
+    margin-bottom: 0%; }
+    div .textIndex p {
+      margin-bottom: 0% !important; }
   .tablaPromociones {
     padding-left: 0%;
     border: none;
     grid-template-columns: repeat(3, 1fr);
     font-size: 2rem; }
-  footer {
-    margin-top: 140px;
-    position: relative;
-    width: 100%;
-    text-align: center; }
   p {
     background-color: green !important;
     margin-top: 0% !important;
+    margin-inline: 33%;
+    margin-bottom: 0% !important;
     border: solid green;
     border-radius: 10px;
-    margin-inline: 25%;
     font-family: 'Roboto', sans-serif;
-    color: #d8d3d3; }
+    color: #d8d3d3;
+    text-align: center; }
   fieldset {
-    margin-top: 150px !important; } }
+    margin-top: 150px !important; }
+  .card p {
+    margin-inline: 13%; } }
 
 @media all and (min-width: 768px) {
   .grid-gallery {
@@ -126,8 +131,9 @@
 
 .pic-ctn > img {
   position: absolute;
-  top: 0;
-  left: calc(40.0%);
+  margin-left: 35%;
+  height: 450px;
+  width: 560px;
   opacity: 0;
   animation: display 10s infinite; }
 
@@ -383,13 +389,115 @@ nav ul li span:nth-child(1) {
 .bgc-verdeclaro {
   background: linear-gradient(to top, green, lightblue); }
 
-footer p {
-  color: #f9f5f4;
-  border: solid #086308;
-  border-radius: 10px;
-  margin-top: 0% !important;
-  margin-bottom: 0% !important;
-  padding-bottom: 0% !important; }
+footer {
+  margin-top: 2% !important;
+  width: 100%;
+  text-align: center; }
+  footer p {
+    color: #f9f5f4;
+    border: solid #086308;
+    border-radius: 10px;
+    margin-top: 5px !important;
+    margin-bottom: 0% !important;
+    padding-bottom: 0% !important; }
+
+.burbuja {
+  border-radius: 50%;
+  background: #fff;
+  opacity: .3;
+  position: absolute;
+  bottom: -150;
+  animation: burbujas 3s linear infinite; }
+
+.burbuja:nth-child(1) {
+  width: 80px;
+  height: 80px;
+  left: 5%;
+  animation-duration: 3s;
+  animation-delay: 3s; }
+
+.burbuja:nth-child(2) {
+  width: 100px;
+  height: 100px;
+  left: 35%;
+  animation-duration: 3s;
+  animation-delay: 5s; }
+
+.burbuja:nth-child(3) {
+  width: 20px;
+  height: 20px;
+  left: 15%;
+  animation-duration: 1.5s;
+  animation-delay: 7s; }
+
+.burbuja:nth-child(4) {
+  width: 50px;
+  height: 50px;
+  left: 90%;
+  animation-duration: 6s;
+  animation-delay: 3s; }
+
+.burbuja:nth-child(5) {
+  width: 70px;
+  height: 70px;
+  left: 65%;
+  animation-duration: 3s;
+  animation-delay: 1s; }
+
+.burbuja:nth-child(6) {
+  width: 20px;
+  height: 20px;
+  left: 50%;
+  animation-duration: 4s;
+  animation-delay: 5s; }
+
+.burbuja:nth-child(7) {
+  width: 20px;
+  height: 20px;
+  left: 50%;
+  animation-duration: 4s;
+  animation-delay: 5s; }
+
+.burbuja:nth-child(8) {
+  width: 100;
+  height: 100px;
+  left: 52%;
+  animation-duration: 5s;
+  animation-delay: 5s; }
+
+.burbuja:nth-child(9) {
+  width: 65px;
+  height: 65px;
+  left: 51%;
+  animation-duration: 3s;
+  animation-delay: 2s; }
+
+.burbuja:nth-child(10) {
+  width: 40px;
+  height: 40px;
+  left: 35%;
+  animation-duration: 3s;
+  animation-delay: 4s; }
+
+@keyframes burbujas {
+  0% {
+    bottom: 0;
+    opacity: 0; }
+  30% {
+    transform: translateX(30px); }
+  50% {
+    opacity: .4; }
+  100% {
+    bottom: 100vh;
+    opacity: 0; } }
+
+@keyframes movimiento {
+  0% {
+    transform: translateY(0); }
+  50% {
+    transform: translateY(30px); }
+  100% {
+    transform: translateY(0); } }
 
 .layout {
   background-image: url(https://images5.alphacoders.com/428/428016.jpg);
@@ -406,17 +514,21 @@ div .card {
   div .card p {
     border: none; }
 
-.txtIndex {
-  position: relative;
-  text-align: center;
-  width: 80%; }
-
 form {
-  text-align: center; }
+  text-align: center;
+  justify-items: center;
+  font-size: large; }
 
 main div a {
   background-color: transparent; }
 
 .imagenIndex {
+  width: 100%;
   margin-top: 5%;
   margin-bottom: 5%; }
+
+.reserva {
+  margin-top: 15px; }
+
+.redes {
+  margin-bottom: 10px; }

@@ -532,3 +532,9 @@ main div a {
 
 .redes {
   margin-bottom: 10px; }
+
+fieldset div span {
+  position: relative;
+  color: red; }
+  fieldset div span i {
+    color: green; }

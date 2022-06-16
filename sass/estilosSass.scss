@@ -66,4 +66,14 @@ main div a {
 }
 
 
-
+fieldset {
+    div{
+        span{
+            position: relative;
+            color: red;
+            i {
+                color: green;
+            }
+        }
+    }
+}

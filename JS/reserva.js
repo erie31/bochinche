@@ -91,7 +91,7 @@ function validarTel (){
 
 function validateForm(){
    if(!validarName() || !validarCiudad() || !validarTel()){
-      submitError.style.display = "block";
+      
       submitError.innerHTML = "Revisa tus datos";
       setTimeout(function(){submitError.style.display = "none";}, 3000);
       return false

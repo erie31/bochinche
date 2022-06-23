@@ -1,55 +1,15 @@
-/* class Inflables {
-    constructor(nombre, tamaño, precio){
-       this.nombre = nombre;
-       this.tamaño = tamaño;
-       this.precio = precio;
-    }
- 
- }
- const bochinchito = new Inflables ("Bochinchito", "Chico", 500)
- const bochinche = new Inflables ("Bochinche", "Grande", 600)
- const bochincheXl = new Inflables ("BochincheXl", "Gigante", 800)
- 
- 
- const articulo = prompt ("Ingresa el articulo deseado")
- let tiempo = prompt ("Ingresa la cantidad de dias de alquiler")
- class Combo {
-    constructor (articulo,precio,tiempo){
-       this.articulo  = articulo.toUpperCase();
-       this.precio  = parseFloat(precio);
-       this.tiempo = parseFloat(tiempo)
-      let costoAlquiler = () => this.precio * this.tiempo;
-    }
-       
-   
- }
- 
- 
- const comboBochinche = [];
- let   cantidad     = 4;
- 
- do{
-    let entrada = prompt("Arma tu combo, un item a la vez");
-    comboBochinche.push(entrada.toUpperCase());
-    console.log(comboBochinche.length);
- }while(comboBochinche.length != cantidad)
- 
- const nuevoCombo = comboBochinche.concat(["¡Consultar por Catering!","Envio sin cargo"]);
- 
- alert(nuevoCombo.join("\n")); */
-
 let nameError = document.getElementById('name-error');
 let ciudadError = document.getElementById ("ciudadError");
 let telError = document.getElementById ("telError");
 
 function validarName (){
-    let name = document.getElementById ("nameValidar").value;
+    let nombre = document.getElementById ("nameValidar").value;
 
-    if(name.length == 0){
+    if(nombre.length == 0){
         nameError.innerHTML = "Complete este campo";
         return false;
     }
-    if(!name.match(/^[A-Za-z]*\s{1}[A-Za-z]*$/)){
+    if(!nombre.match(/^[A-Za-z]*\s{1}[A-Za-z]*$/)){
        nameError.innerHTML = "Escriba su nombre completo"
         return false;
     }
@@ -97,3 +57,40 @@ function validateForm(){
       return false
    }
 }
+
+/* let nombre;
+let nombreLS = JSON.stringify(localStorage.setItem(nombre))
+
+if (nombreLS) {
+    nombre = nombreLS
+} else {
+   nombre = prompt("Ingrese su nombre")
+} */
+
+
+$(document).ready(function(){    
+    $('#btnReserva').click(function(){        
+             
+        let nombreLS = document.getElementById("nameValidar").value;
+        let ciudadLS = document.getElementById("ciudadValidar").value;
+        let telefonoLS = document.getElementById("telValidar").value;      
+        localStorage.setItem("Nombre", nombreLS);
+        localStorage.setItem("Ciudad", ciudadLS);
+        localStorage.setItem("Telefono", telefonoLS);
+        document.getElementById("nameValidar").value = "";
+        document.getElementById("ciudadValidar").value = "";
+        document.getElementById("telValidar").value = "";
+    })   
+})
+
+let mostrarLS = document.getElementById ("mostrar")    
+    mostrarLS.addEventListener('click', () =>{                    
+       let nombre = localStorage.getItem("Nombre");
+       let ciudad = localStorage.getItem("Ciudad");
+       let telefono = localStorage.getItem("Telefono");
+       document.getElementById("nameValidar").innerHTML = nombre;
+        document.getElementById("ciudadValidaro").innerHTML = ciudad;
+        document.getElementById("telValidar").innerHTML = telefono;
+        
+    })   
+

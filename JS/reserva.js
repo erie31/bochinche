@@ -68,8 +68,8 @@ if (nombreLS) {
 } */
 
 
-$(document).ready(function(){    
-    $('#btnReserva').click(function(){        
+   
+    btnReserva.addEventListener('click', () =>{        
              
         let nombreLS = document.getElementById("nameValidar").value;
         let ciudadLS = document.getElementById("ciudadValidar").value;
@@ -81,16 +81,16 @@ $(document).ready(function(){
         document.getElementById("ciudadValidar").value = "";
         document.getElementById("telValidar").value = "";
     })   
-})
 
-let mostrarLS = document.getElementById ("mostrar")    
+
+  
     mostrarLS.addEventListener('click', () =>{                    
-       let nombre = localStorage.getItem("Nombre");
-       let ciudad = localStorage.getItem("Ciudad");
-       let telefono = localStorage.getItem("Telefono");
-       document.getElementById("nameValidar").innerHTML = nombre;
-        document.getElementById("ciudadValidaro").innerHTML = ciudad;
-        document.getElementById("telValidar").innerHTML = telefono;
+       let name = localStorage.getItem("Nombre");
+       let city = localStorage.getItem("Ciudad");
+       let tele = localStorage.getItem("Telefono");
+       document.getElementById("Nom").innerHTML = name;
+        document.getElementById("Ciu").innerHTML = city;
+        document.getElementById("Telef").innerHTML = tele;
         
     })   
 

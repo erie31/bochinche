@@ -60,7 +60,7 @@
                 <div class="form-row">
                   <div class="col-md-6 mb-3">
                     <label class="text-white" >Nombre y Apellido</label>
-                    <input type="text" class="form-control" id="nameValidar" onkeyup="validarName()">
+                    <input type="text" class="form-control"  id="nameValidar" onkeyup="validarName()">
                     <span id="name-error"></span>                    
                   </div>
                   
@@ -68,12 +68,12 @@
                 <div class="form-row">
                   <div class="col-md-6 mb-3">
                     <label class="text-white">Ciudad</label>
-                    <input type="text" class="form-control" id="ciudadValidar" onkeyup="validarCiudad()">
+                    <input type="text" class="form-control"  id="ciudadValidar" onkeyup="validarCiudad()">
                     <span id="ciudadError"></span>
                   </div>
                   <div class="col-md-6 mb-3">
                     <label class="text-white">Teléfono</label>
-                    <input type="tel" pattern="[0-9]" class="form-control" id="telValidar" onkeyup="validarTel()">
+                    <input type="tel" pattern="[0-9]" class="form-control"  id="telValidar" onkeyup="validarTel()">
                     <span id="telError"></span>
                   </div>
                 </div>
@@ -82,11 +82,20 @@
               </form>
               
               
-              <div  class="text-center reserva"><button id="btnReserva" onclick="return validateForm()" class="btn btn-primary" type="submit">Reservar!</button></div>
+              <div  class="text-center reserva"><button  id="btnReserva" onclick="return validateForm()" class="btn btn-primary" type="submit">Reservar!</button></div>
               <span id="submitError"></span>
-              <div class="text-center btn-success"><button id="mostrar">Mostrar datos de reserva</button> </div>      
-              <div class="text-center btn-success"><button id="delete">Borrar datos</button></div>      
+              <div class="text-center btn-success"><button id="mostrarLS">Mostrar datos de reserva</button> </div>      
+                    
+              <div class="text-white text-center">
+              Nombre:
+              <label type="text" id="Nom"></label><br>                          
+              Ciudad:
+              <label type="text" id="Ciu"></label><br>
+              Telefono:
+              <label type="tel" id="Telef"></label><br>
               
+              
+              </div> 
             </fieldset>
 
         

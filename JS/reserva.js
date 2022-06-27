@@ -80,6 +80,7 @@ if (nombreLS) {
         document.getElementById("nameValidar").value = "";
         document.getElementById("ciudadValidar").value = "";
         document.getElementById("telValidar").value = "";
+        alert()
     })   
 
 

@@ -21,12 +21,8 @@ function validarName (){
 function validarCiudad (){
    let ciudad = document.getElementById ("ciudadValidar").value;
 
-   if(ciudad.length == 0){
-       ciudadError.innerHTML = "Complete este campo";
-       return false;
-   }
-   ciudadError.innerHTML = 'Válido'
-   return true;
+   (ciudad.length == 0)? ciudadError.innerHTML = "Complete este campo": ciudadError.innerHTML = 'Válido'
+
 
 }
 
@@ -80,7 +76,12 @@ if (nombreLS) {
         document.getElementById("nameValidar").value = "";
         document.getElementById("ciudadValidar").value = "";
         document.getElementById("telValidar").value = "";
-        alert()
+        
+        Swal.fire ({
+            type:"succes",
+            title:"La reserva se realizo con éxito",
+            text:"Gracias por elegirnos"
+        })
     })   
 
 

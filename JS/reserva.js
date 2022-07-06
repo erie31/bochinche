@@ -1,5 +1,5 @@
 let nameError = document.getElementById('name-error');
-let ciudadError = document.getElementById ("ciudadError");
+let emailError = document.getElementById ("emailError");
 let telError = document.getElementById ("telError");
 
 function validarName (){
@@ -18,10 +18,10 @@ function validarName (){
 
 }
 
-function validarCiudad (){
-   let ciudad = document.getElementById ("ciudadValidar").value;
+function validarEmail (){
+   let email = document.getElementById ("emailValidar").value;
 
-   (ciudad.length == 0)? ciudadError.innerHTML = "Complete este campo": ciudadError.innerHTML = 'Válido'
+   (email.length == 0)? emailError.innerHTML = "Complete este campo": emailError.innerHTML = 'Revisa tu mail antes de reservar'
 
 
 }
@@ -46,7 +46,7 @@ function validarTel (){
 }
 
 function validateForm(){
-   if(!validarName() || !validarCiudad() || !validarTel()){
+   if(!validarName() || !validarEmail() || !validarTel()){
       
       submitError.innerHTML = "Revisa tus datos";
       setTimeout(function(){submitError.style.display = "none";}, 3000);
@@ -68,13 +68,13 @@ if (nombreLS) {
     btnReserva.addEventListener('click', () =>{        
              
         let nombreLS = document.getElementById("nameValidar").value;
-        let ciudadLS = document.getElementById("ciudadValidar").value;
+        let emailLS = document.getElementById("emailValidar").value;
         let telefonoLS = document.getElementById("telValidar").value;      
         localStorage.setItem("Nombre", nombreLS);
-        localStorage.setItem("Ciudad", ciudadLS);
+        localStorage.setItem("Email", emailLS);
         localStorage.setItem("Telefono", telefonoLS);
         document.getElementById("nameValidar").value = "";
-        document.getElementById("ciudadValidar").value = "";
+        document.getElementById("emailValidar").value = "";
         document.getElementById("telValidar").value = "";
         
         Swal.fire ({
@@ -88,11 +88,22 @@ if (nombreLS) {
   
     mostrarLS.addEventListener('click', () =>{                    
        let name = localStorage.getItem("Nombre");
-       let city = localStorage.getItem("Ciudad");
+       let mail = localStorage.getItem("Email");
        let tele = localStorage.getItem("Telefono");
        document.getElementById("Nom").innerHTML = name;
-        document.getElementById("Ciu").innerHTML = city;
+        document.getElementById("Emai").innerHTML = mail;
         document.getElementById("Telef").innerHTML = tele;
         
     })   
 
+    function sendEmail(e) {
+        e.preventDefault();
+        emailjs.sendForm('service_mto2wz9', 'template_8r6dbd3', e.target, 'YOUR_USER_ID')
+        .then((result) => {
+        console.log(result.text);
+        }, (error) => {
+        console.log(error.text);
+        });
+        }
+
+        

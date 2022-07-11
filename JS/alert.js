@@ -1,5 +1,5 @@
 Swal.fire({
-	title:"¡Mes del TORO!",
+	title:"Mes del TORO",
 	text:"Suma el Toro Mecanico a tu COMBO",
 	icon: undefined,
 	footer:"50%OFF",

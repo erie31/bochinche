@@ -54,15 +54,6 @@ function validateForm(){
    }
 }
 
-/* let nombre;
-let nombreLS = JSON.stringify(localStorage.setItem(nombre))
-
-if (nombreLS) {
-    nombre = nombreLS
-} else {
-   nombre = prompt("Ingrese su nombre")
-} */
-
 
    
     btnReserva.addEventListener('click', () =>{        
@@ -106,4 +97,21 @@ if (nombreLS) {
         });
         }
 
-        
+        const lista = document.querySelector('#comb')
+
+fetch('/data/inflables.json')
+    .then( (res) => res.json())
+    .then( (data) => {
+
+        data.forEach((inflable) => {
+            const di = document.createElement('div')
+            di.innerHTML = `
+                <h2>${inflable.nombre}</h4>
+                <p>${inflable.tamaño}</p>
+                <p>${inflable.catering}</p>
+                <hr/>
+            `
+   
+            lista.append(di)
+        })
+    })

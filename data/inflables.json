@@ -2,17 +2,17 @@
     {   "id":1,
         "nombre":"Inflable Bochinchito",
         "tamaño":"Chico",
-        "catering":"No incluido"
+        "catering":"Menú No incluido"
     },
     {   "id":2,
         "nombre":"Inflable Bochinche",
         "tamaño":"Grande",
-        "catering":"Incluido"
+        "catering":"Menú Incluido"
     },
     {   "id":3,
         "nombre":"Inflable BochincheXl",
         "tamaño":"Gigante",
-        "catering":"Incluido"
+        "catering":"Menú incluido"
     }
         
 ]

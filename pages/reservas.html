@@ -33,7 +33,7 @@
   <nav role="navigation">
     
     <ul class="menu">
-      <li><a href="../pages/promociones.html">Promociones<span></span></a></li>
+      
       <li><a href="../pages/galeria.html">Galería<span></span></li>
       <li><a href="../pages/reservas.html">Reservas<span></span></a></li>
       <li><a href="../pages/conocenos.html">Conócenos<span></span></a></li>
@@ -47,7 +47,7 @@
     </label>
 
     <ul class="menu__box">
-      <li><a href="../pages/promociones.html">Promociones</a></li>
+      
       <li><a href="../pages/galeria.html">Galería</a></li>
       <li><a href="../pages/reservas.html">Reservas</a></li>
       <li><a href="../pages/conocenos.html">Conócenos</a></li>
@@ -55,13 +55,16 @@
     </ul>
   </div>
     <main>
-      <select class="form-control form-control-lg bg-success text-center text-white">
+      <select id="frame" class="form-control form-control-lg bg-success text-center text-white">
                 <option>Elige una opción</option>
-                <option id="bochinchito">Bochinchito</option>
-                <option id="bochinche">Bochinche</option>
-                <option id="bochincheXl">Bochinche XL</option>
+                <option value="1" id="bochinchito">Bochinchito</option>
+                <option value="2" id="bochinche">Bochinche</option>
+                <option value="3" id="bochincheXl">Bochinche XL</option>
               </select>
-              <div id="comb" class="bg-success text-center text-white">
+              <div class="text-center mt-3">
+              <button id="btno" class="btn btn-primary">Confirmar</button>
+              </div>
+            <div id="comb" class="bg-success text-center text-white">
 
               </div>
 

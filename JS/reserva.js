@@ -99,14 +99,14 @@ function validateForm(){
 
         const lista = document.querySelector('#comb')
 
-fetch('/data/inflables.json')
+ fetch('/data/inflables.json')
     .then( (res) => res.json())
     .then( (data) => {
 
         data.forEach((inflable) => {
             const di = document.createElement('div')
             di.innerHTML = `
-                <h2>${inflable.nombre}</h4>
+                <h2>${inflable.nombre}</h2>
                 <p>${inflable.tamaño}</p>
                 <p>${inflable.catering}</p>
                 <hr/>
@@ -114,4 +114,22 @@ fetch('/data/inflables.json')
    
             lista.append(di)
         })
-    })
+    }) 
+    const btno = document.getElementById('btno');
+        const sb = document.getElementById('frame')
+btno.addEventListener("click", ()=>{
+    const selectedValues = [].filter
+    .call(sb.options, option => option.selected)
+    .map(option => option.text);
+        Swal.fire({
+            title: selectedValues,
+        
+        }).then(response => {
+            fetch('/data/inflables.json')
+    .then( (res) => res.json())
+    .t( (selecc) => {selecc.nombre
+
+            response.nombre
+        })
+        
+    })}) 
